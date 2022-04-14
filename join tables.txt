@@ -1,0 +1,84 @@
+
+Create Table A (Aid int, Name varchar(20))
+Create Table B (Bid int, Name varchar(20),Aid int)
+Create Table C (Cid int, Name varchar(20),Bid int)
+
+insert Into A values(1,'Sam')
+insert Into A values(2,'tom')
+insert Into A values(3,'harry')
+insert Into A values(4,'katich')
+insert Into A values(5,'kate')
+
+
+insert Into B values(11,'harry',3)
+insert Into B values(12,'katich',4)
+insert Into B values(13,'kate',5)
+insert Into B values(14,'mate',6)
+insert Into B values(15,'sat',7)
+
+Create Table C (Cid int, Name varchar(20),Bid int)
+insert Into C values(21,'harry',13)
+insert Into C values(22,'katich',14)
+insert Into C values(23,'kate',15)
+insert Into C values(24,'mate',16)
+insert Into C values(25,'sat',17)
+
+
+joins
+
+create table EMP_new (id int, name varchar (10),Company varchar (10),Work varchar (10));
+insert into EMP_new values (1,'Amit','Info','pune')
+insert into EMP_new values (2,'Puja','Tcs','Mumbai')
+insert into EMP_new values (3,'Poonam','Tech','Pune')
+insert into EMP_new values (4,'Abhi','Logic','Nagpur')
+insert into EMP_new values (5,'Kirti','Lim','Nagar')
+
+select * from EMP_new
+
+create table Job (salary int,base varchar (10),id int)
+insert into job values (10000,'Pune',1)
+insert into job values (2
+create table Job (salary int,base varchar (10),id int)
+insert into job values (10000,'Pune',1)
+insert into job values (20000,'Mumbai',3)
+insert into job values (30000,'Nagpur',4)
+insert into job values (40000,'Pune',5)
+insert into job values (35000,'Nagar',2)
+
+select * from Job;
+
+
+self join-------------
+
+create table SELF_TEST_EMP(EID int, ENAME varchar(20),ManagerID varchar(20))
+
+insert into SELF_TEST_EMP values(1,'Shivam',2)
+insert into SELF_TEST_EMP values(2,'krishna',4)
+insert into SELF_TEST_EMP values(3,'meera',NULL)
+insert into SELF_TEST_EMP values(4,'radha',2)
+insert into SELF_TEST_EMP values(5,'bali',1)
+
+select * from SELF_TEST_EMP
+
+
+partition by----------------
+
+create table over_Test(EMPID int, FirstName varchar(20),Gender varchar(2),salary int)
+
+ insert into over_Test values(1,'Mohini','F',1000)
+ insert into over_Test values(2,'Rohit','M',2000)
+ insert into over_Test values(3,'Amit','M',4000)
+ insert into over_Test values(4,'Sonal','F',5000)
+ insert into over_Test values(5,'Minal','F',6000)
+ insert into over_Test values(6,'Amar','M',3600)
+ insert into over_Test values(7,'Shital','F',4500)
+ insert into over_Test values(8,'Sohil','M',6000)
+ insert into over_Test values(9,'praveen','F',9000)
+ insert into over_Test values(10,'Mithali','F',9000)
+ insert into over_Test values(11,'seema','F',9000)
+ insert into over_Test values(12,'meena','F',10000)
+ select * from over_Test
+
+
+
+
